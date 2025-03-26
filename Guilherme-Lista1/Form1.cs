@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Guilherme_Lista1
@@ -25,6 +18,25 @@ namespace Guilherme_Lista1
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                double p1, raio, area;
+                raio = double.Parse(textBox1.Text);
+
+                p1 = 3.14159;
+                area = p1 * (raio * raio);
+
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Por favor, insira valor do raio da circunsferencia", "Erro",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

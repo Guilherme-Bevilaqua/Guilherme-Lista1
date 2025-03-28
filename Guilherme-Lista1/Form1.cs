@@ -25,11 +25,14 @@ namespace Guilherme_Lista1
 
             try
             {
-                double p1, raio, area;
+                double nPi, raio, area;
                 raio = double.Parse(textBox1.Text);
 
-                p1 = 3.14159;
-                area = p1 * (raio * raio);
+                nPi = 3.14159;
+                area = nPi * (raio * raio);
+                
+
+                label4.Text = area.ToString();
 
             }
             catch (FormatException)

@@ -16,5 +16,28 @@ namespace Guilherme_Lista1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                int n1, n2, resultado;
+
+                n1 = Convert.ToInt32(textBox1.Text);
+                n2 = Convert.ToInt32(textBox2.Text);
+
+                resultado = n1 + n2;
+
+                label5.Text = resultado.ToString();
+
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Por favor, insira valores validos para horas trabalhadas, valor da hora e percentual de desconto, ", "Erro",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

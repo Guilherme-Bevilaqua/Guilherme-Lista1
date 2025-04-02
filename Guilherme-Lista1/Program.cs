@@ -16,7 +16,7 @@ namespace Guilherme_Lista1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2_Guilherme()); // adicionar o formulario que deseja executar, no lugar do - colocar underline _
+            Application.Run(new Form4_Guilherme()); // adicionar o formulario que deseja executar, no lugar do - colocar underline _
         }
     }
 }

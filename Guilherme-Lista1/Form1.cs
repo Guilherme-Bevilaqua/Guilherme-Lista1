@@ -30,9 +30,9 @@ namespace Guilherme_Lista1
 
                 nPi = 3.14159;
                 area = nPi * (raio * raio);
-                
 
-                label4.Text = area.ToString();
+
+                label4.Text = area.ToString() + area.ToString("cm²");
 
             }
             catch (FormatException)

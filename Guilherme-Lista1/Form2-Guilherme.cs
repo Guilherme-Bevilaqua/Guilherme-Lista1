@@ -39,5 +39,14 @@ namespace Guilherme_Lista1
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            textBox1.Clear();
+            textBox2.Clear();
+            label5.Text = " ";
+
+        }
     }
 }

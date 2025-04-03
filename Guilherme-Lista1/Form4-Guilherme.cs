@@ -33,7 +33,7 @@ namespace Guilherme_Lista1
 
                 nFahrenheit = (9 * nCelsius + 160) / 5;
 
-                label4.Text = nFahrenheit.ToString();
+                label4.Text = nFahrenheit.ToString() + nCelsius.ToString( "°F");
 
             }
             catch (FormatException)
@@ -41,6 +41,19 @@ namespace Guilherme_Lista1
                 MessageBox.Show("Por favor, insira a temperatura em celsius ", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            textBox2.Clear();
+            label4.Text = " ";
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

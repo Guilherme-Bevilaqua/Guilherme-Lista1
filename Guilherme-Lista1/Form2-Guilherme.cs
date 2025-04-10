@@ -48,5 +48,12 @@ namespace Guilherme_Lista1
             label5.Text = " ";
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            Application.Exit();
+
+        }
     }
 }

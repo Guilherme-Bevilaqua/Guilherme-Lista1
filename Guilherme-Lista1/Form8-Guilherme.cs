@@ -4,15 +4,16 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Guilherme_Lista1
 {
-    public partial class Form7_Guilherme : Form
+    public partial class Form8_Guilherme : Form
     {
-        public Form7_Guilherme()
+        public Form8_Guilherme()
         {
             InitializeComponent();
         }
@@ -20,19 +21,24 @@ namespace Guilherme_Lista1
         private void button1_Click(object sender, EventArgs e)
         {
 
-            double nLitrosGasto, nVelocidadeMedia, nTempo, nDistancia;
+            try
+            {
+                double a, b, c;
 
-            nTempo = double.Parse(textBox1.Text);
-            nVelocidadeMedia = double.Parse(textBox2.Text);
+                a = double.Parse(textBox1.Text);
+                b = double.Parse(textBox2.Text);
 
-            nDistancia = nTempo * nVelocidadeMedia;
+                c = a;
+                a = b;
+                b = c;
 
-            nLitrosGasto = nDistancia / 12;
-            label5.Text = nLitrosGasto.ToString() + nLitrosGasto.ToString("L");
+                label6.Text = a.ToString();
+                label7.Text = b.ToString();
 
-            label7.Text = nTempo.ToString();
-            label9.Text = nVelocidadeMedia.ToString();
-            label11.Text = nDistancia.ToString();
+            }
+            catch (FormatException) {
+                MessageBox.Show(" Porfavor, Digite o valor de A e B", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
         }
 
@@ -42,10 +48,9 @@ namespace Guilherme_Lista1
             textBox1.Clear();
             textBox2.Clear();
 
-            label5.Text = " ";
+            label6.Text = " ";
             label7.Text = " ";
-            label9.Text = " ";
-            label11.Text = " ";
+            
 
         }
 

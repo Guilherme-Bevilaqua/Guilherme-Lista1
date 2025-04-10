@@ -61,6 +61,10 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -384,6 +388,46 @@
             this.label25.Size = new System.Drawing.Size(100, 23);
             this.label25.TabIndex = 31;
             // 
+            // label26
+            // 
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.Location = new System.Drawing.Point(574, 445);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(256, 31);
+            this.label26.TabIndex = 32;
+            this.label26.Text = "Soma de C com D:";
+            // 
+            // label27
+            // 
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(574, 476);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(340, 31);
+            this.label27.TabIndex = 33;
+            this.label27.Text = "Multiplicação de C com D:";
+            // 
+            // label28
+            // 
+            this.label28.BackColor = System.Drawing.SystemColors.Window;
+            this.label28.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label28.Location = new System.Drawing.Point(825, 453);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(100, 23);
+            this.label28.TabIndex = 34;
+            // 
+            // label29
+            // 
+            this.label29.BackColor = System.Drawing.SystemColors.Window;
+            this.label29.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label29.Location = new System.Drawing.Point(910, 484);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(100, 23);
+            this.label29.TabIndex = 35;
+            // 
             // Form9_Guilherme
             // 
             this.AcceptButton = this.button1;
@@ -393,6 +437,10 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.button3;
             this.ClientSize = new System.Drawing.Size(1544, 663);
+            this.Controls.Add(this.label29);
+            this.Controls.Add(this.label28);
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.label26);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label23);
@@ -472,5 +520,9 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
     }
 }

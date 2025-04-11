@@ -19,19 +19,26 @@ namespace Guilherme_Lista1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                double num1, quadrado, cubo;
 
-            double num1, quadrado, cubo;
+                num1 = int.Parse(textBox1.Text);
 
-            num1 = int.Parse(textBox1.Text);
+                quadrado = Math.Pow(num1, 2);
+                cubo = Math.Pow(num1, 3);
 
-            quadrado = Math.Pow(num1, 2);
-            cubo = Math.Pow(num1, 3);
+                quadrado = Convert.ToInt32(quadrado);
+                cubo = Convert.ToInt32(cubo);
 
-            quadrado = Convert.ToInt32(quadrado);
-            cubo = Convert.ToInt32(cubo);
+                label8.Text = quadrado.ToString();
+                label4.Text = cubo.ToString();
 
-            label8.Text = quadrado.ToString();
-            label4.Text = cubo.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show(" Porfavor, Digite um numero", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
 
         }

@@ -67,7 +67,7 @@
             this.label2.Location = new System.Drawing.Point(15, 97);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(700, 38);
+            this.label2.Size = new System.Drawing.Size(926, 38);
             this.label2.TabIndex = 5;
             this.label2.Text = "Digite o Tempo em Horas gastas na viagem:";
             // 
@@ -79,13 +79,13 @@
             this.label3.Location = new System.Drawing.Point(15, 154);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(573, 38);
+            this.label3.Size = new System.Drawing.Size(731, 38);
             this.label3.TabIndex = 6;
             this.label3.Text = "Digite a velocidade média em Km/h: ";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(723, 113);
+            this.textBox1.Location = new System.Drawing.Point(768, 113);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 22);
@@ -93,7 +93,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(596, 170);
+            this.textBox2.Location = new System.Drawing.Point(625, 170);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(132, 22);

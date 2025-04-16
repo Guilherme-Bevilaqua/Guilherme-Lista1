@@ -35,7 +35,7 @@ namespace Guilherme_Lista1
             }
             catch (FormatException)
             {
-                MessageBox.Show("Por favor, insira valores validos para horas trabalhadas, valor da hora e percentual de desconto, ", "Erro",
+                MessageBox.Show("Por favor, insira valores validos para horas trabalhadas, valor da hora e percentual de desconto ", "Erro",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }

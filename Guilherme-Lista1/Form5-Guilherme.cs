@@ -20,13 +20,20 @@ namespace Guilherme_Lista1
         private void button1_Click(object sender, EventArgs e)
         {
 
-            double nCelsius, nFah;
+            try
+            {
+                double nCelsius, nFah;
 
-            nFah = double.Parse(textBox1.Text);
+                nFah = double.Parse(textBox1.Text);
 
-            nCelsius = (nFah - 32) * 5 / 9;
+                nCelsius = (nFah - 32) * 5 / 9;
 
-            label5.Text = nCelsius.ToString() + nCelsius.ToString( "°C");
+                label5.Text = nCelsius.ToString() + nCelsius.ToString("°C");
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show (" Porfavor, Digite o valor da temperatura em graus Fahrenheit", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
         }
 

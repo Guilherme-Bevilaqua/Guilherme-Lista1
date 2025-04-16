@@ -32,13 +32,13 @@ namespace Guilherme_Lista1
                 nVolume = nRaio * nAltura * 3.14159;
                 
 
-                label5.Text = nVolume.ToString();
+                label5.Text = nVolume.ToString() + nVolume.ToString("m³");
 
             }
 
             catch (FormatException)
             {
-                MessageBox.Show(" Porfavor, Digite do Raio e Altura da lata de oleo para que se possa calcular o seu volume", "Erro",
+                MessageBox.Show(" Porfavor, Digite o valor do Raio e Altura da lata de oleo para que se possa calcular o seu volume", "Erro",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }

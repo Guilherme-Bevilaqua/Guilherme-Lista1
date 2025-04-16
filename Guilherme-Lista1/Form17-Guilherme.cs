@@ -10,46 +10,44 @@ using System.Windows.Forms;
 
 namespace Guilherme_Lista1
 {
-    public partial class Form11_Guilherme : Form
+    public partial class Form17_Guilherme : Form
     {
-        public Form11_Guilherme()
+        public Form17_Guilherme()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             try
             {
-                double num1, quadrado, cubo;
 
-                num1 = int.Parse(textBox1.Text);
+                int n1, divisor, quociente, resto;
 
-                quadrado = Math.Pow(num1, 2);
-                cubo = Math.Pow(num1, 3);
+                n1 = int.Parse(textBox1.Text);
+                divisor = int.Parse(textBox2.Text);
 
-                quadrado = Convert.ToInt32(quadrado);
-                cubo = Convert.ToInt32(cubo);
+                quociente = n1 / divisor;
+                resto = n1 % divisor;
 
-                label8.Text = quadrado.ToString();
-                label4.Text = cubo.ToString();
+                label6.Text = quociente.ToString();
+                label7.Text = resto.ToString();
 
             }
-            catch (FormatException)
-            {
-                MessageBox.Show(" Porfavor, Digite um numero", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            catch (FormatException){
+                MessageBox.Show(" Porfavor, Digite o numero e seu divisor", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
             }
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
             textBox1.Clear();
+            textBox2.Clear();
 
-            label8.Text = " ";
-            label4.Text = " ";
+            label6.Text = " ";
+            label7.Text = " ";
 
         }
 

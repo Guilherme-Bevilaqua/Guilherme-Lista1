@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Guilherme_Lista1
 {
-    public partial class Form11_Guilherme : Form
+    public partial class Form14_Guilherme : Form
     {
-        public Form11_Guilherme()
+        public Form14_Guilherme()
         {
             InitializeComponent();
         }
@@ -21,35 +21,28 @@ namespace Guilherme_Lista1
         {
             try
             {
-                double num1, quadrado, cubo;
+                double val1, val2, media;
 
-                num1 = int.Parse(textBox1.Text);
+                val1 = double.Parse(textBox1.Text);
+                val2 = double.Parse(textBox2.Text);
 
-                quadrado = Math.Pow(num1, 2);
-                cubo = Math.Pow(num1, 3);
+                media = (val1 + val2) / 2;
 
-                quadrado = Convert.ToInt32(quadrado);
-                cubo = Convert.ToInt32(cubo);
-
-                label8.Text = quadrado.ToString();
-                label4.Text = cubo.ToString();
-
+                label5.Text = media.ToString();
             }
             catch (FormatException)
             {
-                MessageBox.Show(" Porfavor, Digite um numero", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show (" Porfavor, Digite o valor do primeiro e segundo numero", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
             textBox1.Clear();
+            textBox2.Clear();
 
-            label8.Text = " ";
-            label4.Text = " ";
+            label5.Text = " ";
 
         }
 

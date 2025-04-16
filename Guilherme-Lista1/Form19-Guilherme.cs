@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Guilherme_Lista1
 {
-    public partial class Form11_Guilherme : Form
+    public partial class Form19_Guilherme : Form
     {
-        public Form11_Guilherme()
+        public Form19_Guilherme()
         {
             InitializeComponent();
         }
@@ -21,24 +21,28 @@ namespace Guilherme_Lista1
         {
             try
             {
-                double num1, quadrado, cubo;
+               /* string formato1, formato2;
 
-                num1 = int.Parse(textBox1.Text);
+                formato1 = textBox1.Text;
 
-                quadrado = Math.Pow(num1, 2);
-                cubo = Math.Pow(num1, 3);
 
-                quadrado = Convert.ToInt32(quadrado);
-                cubo = Convert.ToInt32(cubo);
 
-                label8.Text = quadrado.ToString();
-                label4.Text = cubo.ToString();
+                char[] charArray  = formato1.ToCharArray();
+                Array.Reverse(charArray);
+                formato2 = new string(charArray);
+
+                int formatoint;
+
+                formatoint = int.Parse(formato2);
+
+                label7.Text = formatoint.ToString(); */
 
             }
             catch (FormatException)
             {
-                MessageBox.Show(" Porfavor, Digite um numero", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(" Porfavor, Digite os valores no formato DDMMAA", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
 
 
         }
@@ -48,8 +52,7 @@ namespace Guilherme_Lista1
 
             textBox1.Clear();
 
-            label8.Text = " ";
-            label4.Text = " ";
+            label7.Text = " ";
 
         }
 
@@ -57,6 +60,11 @@ namespace Guilherme_Lista1
         {
 
             Application.Exit();
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
 
         }
     }

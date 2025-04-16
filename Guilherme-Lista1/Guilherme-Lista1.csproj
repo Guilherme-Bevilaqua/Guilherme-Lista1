@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -67,11 +67,65 @@
     <Compile Include="Form11-Guilherme.Designer.cs">
       <DependentUpon>Form11-Guilherme.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form12-Guilherme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12-Guilherme.Designer.cs">
+      <DependentUpon>Form12-Guilherme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form13-Guilherme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form13-Guilherme.Designer.cs">
+      <DependentUpon>Form13-Guilherme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form14-Guilherme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form14-Guilherme.Designer.cs">
+      <DependentUpon>Form14-Guilherme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form16-Guilherme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form16-Guilherme.Designer.cs">
+      <DependentUpon>Form16-Guilherme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form17-Guilherme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form17-Guilherme.Designer.cs">
+      <DependentUpon>Form17-Guilherme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form18-Guilherme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form18-Guilherme.Designer.cs">
+      <DependentUpon>Form18-Guilherme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form19-Guilherme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form19-Guilherme.Designer.cs">
+      <DependentUpon>Form19-Guilherme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2-Guilherme.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form2-Guilherme.Designer.cs">
       <DependentUpon>Form2-Guilherme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form20-Guilherme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form20-Guilherme.Designer.cs">
+      <DependentUpon>Form20-Guilherme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form21-Guilherme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form21-Guilherme.Designer.cs">
+      <DependentUpon>Form21-Guilherme.cs</DependentUpon>
     </Compile>
     <Compile Include="Form4-Guilherme.cs">
       <SubType>Form</SubType>
@@ -120,8 +174,35 @@
     <EmbeddedResource Include="Form11-Guilherme.resx">
       <DependentUpon>Form11-Guilherme.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form12-Guilherme.resx">
+      <DependentUpon>Form12-Guilherme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form13-Guilherme.resx">
+      <DependentUpon>Form13-Guilherme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form14-Guilherme.resx">
+      <DependentUpon>Form14-Guilherme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form16-Guilherme.resx">
+      <DependentUpon>Form16-Guilherme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form17-Guilherme.resx">
+      <DependentUpon>Form17-Guilherme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form18-Guilherme.resx">
+      <DependentUpon>Form18-Guilherme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form19-Guilherme.resx">
+      <DependentUpon>Form19-Guilherme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form2-Guilherme.resx">
       <DependentUpon>Form2-Guilherme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form20-Guilherme.resx">
+      <DependentUpon>Form20-Guilherme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form21-Guilherme.resx">
+      <DependentUpon>Form21-Guilherme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form4-Guilherme.resx">
       <DependentUpon>Form4-Guilherme.cs</DependentUpon>

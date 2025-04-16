@@ -28,7 +28,7 @@ namespace Guilherme_Lista1
             nDistancia = nTempo * nVelocidadeMedia;
 
             nLitrosGasto = nDistancia / 12;
-            label5.Text = nLitrosGasto.ToString() + nLitrosGasto.ToString("L");
+            label5.Text = nLitrosGasto.ToString();
 
             label7.Text = nTempo.ToString();
             label9.Text = nVelocidadeMedia.ToString();

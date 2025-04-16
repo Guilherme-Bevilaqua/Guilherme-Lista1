@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Guilherme_Lista1
 {
-    public partial class Form11_Guilherme : Form
+    public partial class Form16_Guilherme : Form
     {
-        public Form11_Guilherme()
+        public Form16_Guilherme()
         {
             InitializeComponent();
         }
@@ -21,26 +21,19 @@ namespace Guilherme_Lista1
         {
             try
             {
-                double num1, quadrado, cubo;
+                double km, ms;
 
-                num1 = int.Parse(textBox1.Text);
+                km = double.Parse(textBox1.Text);
 
-                quadrado = Math.Pow(num1, 2);
-                cubo = Math.Pow(num1, 3);
+                ms = km / 3.6;
 
-                quadrado = Convert.ToInt32(quadrado);
-                cubo = Convert.ToInt32(cubo);
-
-                label8.Text = quadrado.ToString();
-                label4.Text = cubo.ToString();
+                label4.Text = ms.ToString();
 
             }
             catch (FormatException)
             {
-                MessageBox.Show(" Porfavor, Digite um numero", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show (" Porfavor, Digite o valor da velocidade", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -48,7 +41,6 @@ namespace Guilherme_Lista1
 
             textBox1.Clear();
 
-            label8.Text = " ";
             label4.Text = " ";
 
         }

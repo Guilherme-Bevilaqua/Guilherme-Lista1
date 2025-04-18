@@ -21,21 +21,27 @@ namespace Guilherme_Lista1
         {
             try
             {
-               /* string formato1, formato2;
 
-                formato1 = textBox1.Text;
+                int dia, mes, ano;
+                string ano2, mes2, dia2, digitos;
 
+                dia = int.Parse(textBox1.Text);
+                mes = int.Parse(textBox2.Text); 
+                ano = int.Parse(textBox3.Text);
+                
+                mes2 = mes.ToString();
+                dia2 = dia.ToString();
 
+                if ( dia2.Length < 2 && mes2.Length < 2)
+                {
+                    dia2 = "0" + dia2;
+                    mes2 = "0" + mes2;
+                }
 
-                char[] charArray  = formato1.ToCharArray();
-                Array.Reverse(charArray);
-                formato2 = new string(charArray);
+                ano2 = ano.ToString();
+                digitos = ano2.Substring(ano2.Length - 2);
 
-                int formatoint;
-
-                formatoint = int.Parse(formato2);
-
-                label7.Text = formatoint.ToString(); */
+                label7.Text = digitos.ToString() + mes2.ToString() + dia2.ToString();
 
             }
             catch (FormatException)
@@ -51,6 +57,8 @@ namespace Guilherme_Lista1
         {
 
             textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
 
             label7.Text = " ";
 
@@ -64,6 +72,11 @@ namespace Guilherme_Lista1
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
